@@ -2,31 +2,53 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .goodGuyImageClass{
     width: 150px;
     height: 200px;
-    border: 5px solid black;
+    border: 10px solid white;
     margin-left: 10px;
-    
-    }
-    .badGuyImageClass{
+    margin-top: 10px;
+}
+.badGuyImageClass{
         width: 150px;
         height: 200px;
-        border: 5px solid black;
+        border: 10px solid black;
         margin-left: 10px;
         
-        }
-  #goodGuyCharacterChosen{
+}
+#goodGuyCharacterChosen{
       margin-left: 10px;
       font-size: 30px;
       color: beige;
-      
-  }
+}
   #badGuyCharacterChosen{
     margin-left: 10px;
     font-size: 30px;
     color: beige;
    
-  } 
+} 
+#duelingArea{
+    width: 890px;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    border-bottom: solid 4px white;
+}
+#goodGuyFighting{
+    display: inline-block;
+    width: 700px;
+  
+}
+#badGuyFighting{
+    display: inline-block;
+    width: 700px;
+}
+#goodGuyHealthRemaining{
+    display: inline-block;
    
+    width: 700px;
+}
+ #badGuyHealthRemaining{
+    display: inline-block;
+    width: 700px;
+}  
