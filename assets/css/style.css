@@ -2,53 +2,81 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.jumbotron.jumbotron-fluid {
+    text-align: center;
+padding: 10px;
+background: burlywood;
+}
+.display-4{
+    text-align: center;
+    color: white;
+}
+.container{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.col{
+    width: 100%;
+   
+}
+.row{
+    width: 100%;
+}
+h1{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+
+}
+#goodGuyCharacters{
+    width: 100%;
+    margin-left: 50px;
+}
+#badGuyCharacters{
+    width: 100%;
+    margin-left: 50px;
+}
 .goodGuyImageClass{
     width: 150px;
     height: 200px;
     border: 10px solid white;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-.badGuyImageClass{
-        width: 150px;
-        height: 200px;
-        border: 10px solid black;
-        margin-left: 10px;
-        
-}
-#goodGuyCharacterChosen{
-      margin-left: 10px;
-      font-size: 30px;
-      color: beige;
-}
-  #badGuyCharacterChosen{
-    margin-left: 10px;
-    font-size: 30px;
-    color: beige;
-   
+    margin: 5px;
+ 
 } 
-#duelingArea{
-    width: 890px;
-    font-size: 35px;
+.badGuyImageClass{
+    width: 150px;
+    height: 200px;
+    border: 10px solid black;
+    margin: 5px;
+}
+h2{
     color: white;
+    font-size: 25px;
     text-align: center;
-    border-bottom: solid 4px white;
 }
 #goodGuyFighting{
-    display: inline-block;
-    width: 700px;
-  
+    margin-left: 150px;
+}
+#goodGuyNameDisplayed{
+    color: white;
+    font-size: 25px;
+    margin-left: 155px; 
 }
 #badGuyFighting{
-    display: inline-block;
-    width: 700px;
+    margin-left: 150px;
 }
-#goodGuyHealthRemaining{
-    display: inline-block;
-   
-    width: 700px;
+#badGuyNameDisplayed{
+    color: white;
+    font-size: 25px;
+    margin-left: 155px; 
 }
- #badGuyHealthRemaining{
-    display: inline-block;
-    width: 700px;
-}  
+#gamePlayDescribed{
+    border: 5px black solid;
+    background: bisque;
+    height:300px;
+}
+
+
+
+
