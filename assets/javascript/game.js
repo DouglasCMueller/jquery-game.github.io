@@ -6,7 +6,7 @@ var badGuyChosen = false;
 var goodGuyName = "";
 var randomNumber = 0;
 var goodGuyNameDueling ="";
-
+var delayButtonAlert;
 
 var goodGuysCharactersArray =[
     {name: "Annie Oakley", image: "assets/images/annieOakley.jpg", healthpoints: 105},
@@ -83,35 +83,31 @@ $(".badGuyImageClass").on("click", function(){
         alert("You have already chosen a Bad Guy!");
         }
     $("#startDuel").on("click", function(){
-      
-        $("#duelingText").append("<br><hr>" + goodGuyName + "cocks gun.");
+        $("#duelingText").append("<br><hr>" + goodGuyName + "cocks gun.")
         $("audio#gunCockOne")[0].play();
-        setTimeout(function(){ $("#duelingText").append("<br><hr>" + badGuyName + "cocks gun."); }, 3000);
-        setTimeout(function(){ $("audio#gunCockTwo")[0].play(); }, 3000);
+        $("#duelingText").append("<br><hr>" + badGuyName + " cocks gun.");
+        $("audio#gunCockOne")[0].play();
 
         //create random # to see which gunfighter shoots first
         var randomNumber = Math.floor(Math.random() * 2);
      
      
         if (randomNumber === 0) {
-            $("#duelingText").append(goodGuyName + " shoots first!");
-                    
-                    $("#duelingText").append("<br><hr>" + badGuyName + " shoots!");
-              
-      
-  
-        $("#duelingText").append("<br><hr>" + goodGuyName + " shoots!");
-        $("#duelingText").append("<br><hr>" + badGuyName + " shoots!");
-        $("#duelingText").append("<br><hr>" + goodGuyName + " shoots!");
+            $("#duelingText").append("<br><hr>" + goodGuyName + " shoots first!");
+            $("audio#gunShotOne")[0].play();
+            $("#duelingText").append("<br><hr>" + badGuyName + " shoots!");
+            $("audio#gunShotOne")[0].play();
+            $("#duelingText").append("<br><hr>" + goodGuyName + " shoots!");
+            $("#duelingText").append("<br><hr>" + badGuyName + " shoots!");
+            $("#duelingText").append("<br><hr>" + goodGuyName + " shoots!");
 
         setTimeout(function(){ alert(goodGuyName + " is the best Gunfighter in the West!!!"); }, 3000);
     }
         else {
-          
         $("#duelingText").append("<br><hr>" + badGuyName + " shoots first!");
-      
+        $("audio#gunShotOne")[0].play();
         $("#duelingText").append("<br><hr>" + goodGuyName + "shoots!");
-
+        $("audio#gunShotOne")[0].play();
         $("#duelingText").append("<br><hr>" + badGuyName + " shoots!");
         $("#duelingText").append("<br><hr>" + goodGuyName + "shoots!");
         $("#duelingText").append("<br><hr>" + badGuyName + " shoots!");

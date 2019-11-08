@@ -73,6 +73,7 @@ h2{
     margin-left: 155px; 
 }
 #gamePlayDescribed{
+    width: 100%;
     border: 5px black solid;
     background: burlywood;
     height:400px;
@@ -87,8 +88,9 @@ h2{
 }
 #duelingText{
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     float: left;
+    line-height: .5;
 }
 
 
