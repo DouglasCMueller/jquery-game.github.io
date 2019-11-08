@@ -1,7 +1,8 @@
 $(document).ready(function() {
-
-    //Variables defined
-
+    
+//Variables defined
+var goodGuyChosen = false;
+var badGuyChosen = false;
 
 var goodGuysCharactersArray =[
     {name: "Annie Oakley", image: "assets/images/annieOakley.jpg", healthpoints: 105},
@@ -37,6 +38,8 @@ for (var j = 0; j < badGuysCharactersArray.length; j++){
 }
 //enable click on good guy characters
 $(".goodGuyImageClass").on("click", function(){
+    if (goodGuyChosen === false) {
+         goodGuyChosen = true;
     //store value of each good guy
     var goodGuyFightingValue = ($(this).attr("dataGoodGuyImageValue"));
     //assign numeric value to good guy
@@ -46,10 +49,18 @@ $(".goodGuyImageClass").on("click", function(){
      var goodGuyName = ($(this)).attr("dataGoodGuyImageName");
     console.log(goodGuyName);
     $("#goodGuyFighting").html(this);
+    
     $("#goodGuyNameDisplayed").html(goodGuyName);
-
+   
+    }
+    else{
+    alert("You have already chosen a Good Guy!");
+    }
+ 
 });
 $(".badGuyImageClass").on("click", function(){
+    if (badGuyChosen === false) {
+        badGuyChosen = true;
     //store value of each bad guy
     var badGuyFightingValue = ($(this).attr("dataBadGuyImageValue"));
     //assign numeric value to bad guy
@@ -60,9 +71,13 @@ $(".badGuyImageClass").on("click", function(){
     console.log(badGuyName);
     $("#badGuyFighting").append(this);
     $("#badGuyNameDisplayed").html(badGuyName);
-
+    }
+    else{
+        alert("You have already chosen a Bad Guy!");
+        }
 
 });
+
 }
 startGame();
 });
