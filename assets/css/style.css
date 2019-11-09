@@ -92,6 +92,11 @@ h2{
     float: left;
     line-height: .5;
 }
+.reset{
+    font-size: 25px;
+    text-align: center;
+    margin-left: 700px;
+}
 
 
 
